@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="exchange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="currency" type="CurrencyType" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="CurrencyType">
+    <xs:sequence>
+      <xs:element name="r030" type="xs:string" />
+      <xs:element name="txt" type="xs:string" />
+      <xs:element name="rate" type="xs:string" />
+      <xs:element name="cc" type="xs:string" />
+      <xs:element name="exchangedate" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
